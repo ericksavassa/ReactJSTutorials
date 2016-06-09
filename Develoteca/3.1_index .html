@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="http://fb.me/react-with-addons-0.12.0.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div id="ejemplo1"></div>
+
+
+    <script type="text/jsx">
+        var Componente1 = React.createClass(
+           { 
+                render:function(){ 
+                    return (<h1>Componente1 {this.props.nomePropriedade}</h1>); }
+           }); 
+        
+        React.renderComponent(<Componente1 nomePropriedade="TESTE"/>, document.getElementById('ejemplo1')); 
+        
+    
+    </script>
+    
+</body>
+
+</html>
